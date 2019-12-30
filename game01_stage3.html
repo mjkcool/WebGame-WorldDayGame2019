@@ -1,0 +1,130 @@
+<html>
+<!-- 정리 완료 11/2 -->
+
+<head>
+  <meta charset="utf-8">
+  <title>✰ Level 3 ✰</title>
+
+  <Link rel="stylesheet" type="text/css" href="stylesheet_game01.css">
+  <script language=javascript src='jsfunc.js'></script>
+  <script language=javascript>
+    var point = 0;
+
+    function over() {
+      location.href = "game01_gameover_3first.html"
+    }
+
+    function next() {
+      if (point == 8) {
+        location.href = "stage03_clear.html";
+      } else {
+        alert("저런, 아직 아이템이 남아있네요!")
+        over()
+      }
+    }
+  </script>
+
+
+</head>
+
+<body bgcolor=pink onload="myinit()"><span style="cursor:move">
+    <div class=windowpanel>
+      <!-- 게임영역 -->
+
+      <div class=gamediv id=gamediv>
+
+        <br>
+        <br>
+        <div class=block3 onmouseover=over() style="margin-left:42px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:43px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:43px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:50px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:50px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:47px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:40px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:46px"></div>
+        <br>
+        <div class=block3 onmouseover=over() style="margin-left:42px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:43px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:43px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:50px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:50px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:47px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:40px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:46px"></div>
+        <br>
+        <div class=block3 onmouseover=over() style="margin-left:42px"></div>
+        <img id=actDiv1 class=pointblock onmouseover=myFunction1() src=images/blood.png style='display: inline-block; margin-left:0px;width:38px;'></img>
+        <div class=block3 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:43px"></div>
+        <img id=actDiv2 class=pointblock onmouseover=myFunction2() src=images/blood.png style='display: inline-block; margin-left:0px;width:40px;'></img>
+        <div class=block3 onmouseover=over() style="margin-left:2px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:50px"></div>
+        <img id=actDiv3 class=pointblock onmouseover=myFunction3() src=images/blood.png style='display: inline-block; margin-left:0px;width:40px;'></img>
+        <div class=block3 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:40px"></div>
+        <img id=actDiv4 class=pointblock onmouseover=myFunction4() src=images/blood.png style='display: inline-block; margin-left:0px;width:40px;'></img>
+        <div class=block3 onmouseover=over() style="margin-left:0px"></div>
+        <br>
+        <div class=block3 onmouseover=over() style="margin-left:42px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:43px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:50px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:40px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:0px"></div>
+        <br>
+        <div class=block4 onmouseover=next() style="cursor:cell; margin-left:552px;"></div>
+        <br>
+        <div class=block3 onmouseover=over() style="margin-left:42px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:43px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:50px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:40px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:0px"></div>
+        <br>
+        <div class=block3 onmouseover=over() style="margin-left:42px"></div>
+        <img id=actDiv5 class=pointblock onmouseover=myFunction5() src=images/blood-pack.png style='display: inline-block; margin-left:5px;width:30px;'></img>
+        <div class=block3 onmouseover=over() style="margin-left:5px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:43px"></div>
+        <img id=actDiv6 class=pointblock onmouseover=myFunction6() src=images/blood-pack.png style='display: inline-block; margin-left:5px;width:30px;'></img>
+        <div class=block3 onmouseover=over() style="margin-left:5px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:50px"></div>
+        <img id=actDiv7 class=pointblock onmouseover=myFunction7() src=images/blood-pack.png style='display: inline-block; margin-left:5px;width:30px;'></img>
+        <div class=block3 onmouseover=over() style="margin-left:5px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:40px"></div>
+        <img id=actDiv8 class=pointblock onmouseover=myFunction8() src=images/blood-pack.png style='display: inline-block; margin-left:5px;width:30px;'></img>
+        <div class=block3 onmouseover=over() style="margin-left:5px"></div>
+        <br>
+        <div class=block3 onmouseover=over() style="margin-left:42px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:43px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:43px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:50px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:50px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:47px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:40px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:46px"></div>
+        <br>
+        <div class=block3 onmouseover=over() style="margin-left:132px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:43px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:240px"></div>
+        <div class=block3 onmouseover=over() style="margin-left:40px"></div>
+
+      </div>
+  </span>
+  </div>
+</body>
+
+
+</html>

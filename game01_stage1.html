@@ -1,0 +1,132 @@
+<html>
+<!-- 정리 완료 10/31 -->
+
+<head>
+  <meta charset="utf-8">
+  <title>✰ Level 1 ✰</title>
+  <Link rel="stylesheet" type="text/css" href="stylesheet_game01.css">
+  <script language=javascript src='jsfunc.js'></script>
+  <script language=javascript>
+    var point = 0;
+
+    function over() {
+      location.href = "game01_gameover_1first.html"
+    }
+
+    function next() {
+      if (point == 3) {
+        location.href = "stage01_clear.html";
+      } else {
+        alert("저런, 아직 아이템이 남아있네요!")
+        over()
+      }
+    }
+  </script>
+</head>
+
+<body bgcolor=#A2F5E6 onload="myinit()"><span style="cursor:move">
+    <div class=windowpanel>
+      <!-- 게임영역 -->
+      <div class=gamediv id="gamediv">
+        <!-- 1번째 줄 -->
+        <div class=block onmouseover=next() style="cursor:cell; margin-left:177px;background-color:#FF8200"></div>
+        <div class=block style="margin-left:1px"></div>
+        <br>
+
+        <!-- 2번째 줄 -->
+        <div class=block style="margin-left:225px"></div>
+        <div class=block onmouseover=over() style="margin-left:45px;"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:45px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <img id=actDiv1 class=pointblock onmouseover="myFunction1()" src=images/drop.png style='display: inline-block; margin-left:0px;'></img>
+
+        <!-- 3번째 줄 -->
+        <br>
+        <div class=block onmouseover=over() style="margin-left:38px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:141px;"></div>
+        <br>
+
+        <!-- 4번째 줄 -->
+        <div class=block onmouseover=over() style="margin-left:225px;"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:48px;"></div>
+        <div class=block onmouseover=over() style="margin-left:44px;"></div>
+        <div class=block onmouseover=over() style="margin-left:0px;"></div>
+        <div class=block onmouseover=over() style="margin-left:0px;"></div>
+        <div class=block onmouseover=over() style="margin-left:0px;"></div>
+        <div class=block onmouseover=over() style="margin-left:0px;"></div>
+        <div class=block onmouseover=over() style="margin-left:0px;"></div>
+
+        <!-- 5번째 줄 -->
+        <br>
+        <div class=block onmouseover=over() style="margin-left:5px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:80px"></div>
+        <div class=block onmouseover=over() style="margin-left:140px;"></div>
+        <div class=block onmouseover=over() style="margin-left:47px"></div>
+        <img id=actDiv2 class=pointblock onmouseover=myFunction2() src=images/drop.png style='display: inline-block; margin-left:180px;'></img>
+        <br>
+
+        <!-- 6번째 줄 -->
+        <div class=block onmouseover=over() style="margin-left:225px"></div>
+        <div class=block onmouseover=over() style="margin-left:140px;"></div>
+        <div class=block onmouseover=over() style="margin-left:139px;"></div>
+        <div class=block onmouseover=over() style="margin-left:0px;"></div>
+        <div class=block onmouseover=over() style="margin-left:0px;"></div>
+        <div class=block onmouseover=over() style="margin-left:0px;"></div>
+        <br>
+
+        <!-- 7번째 줄 -->
+        <div class=block onmouseover=over() style="margin-left:40px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:45px"></div>
+        <br>
+
+        <!-- 8번째 줄 -->
+        <div class=block onmouseover=over() style="margin-left:597px"></div>
+        <img id=actDiv3 class=pointblock onmouseover=myFunction3() src=images/drop.png style='display: inline-block; margin-left:0px;'></img>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <br>
+
+        <!-- 9번째 줄 -->
+        <div class=block onmouseover=over() style="margin-left:40px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+        <div class=block onmouseover=over() style="margin-left:0px"></div>
+      </div>
+  </span>
+  </div>
+</body>
+
+</html>

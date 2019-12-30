@@ -1,0 +1,66 @@
+<html>
+<!-- 정리 완료 11/2 -->
+<head>
+  <meta charset="utf-8">
+  <Link rel="stylesheet" type="text/css" href="stylesheet_game01.css">
+  <script language=javascript>
+    function gameGo() {
+      top.location.href = "loadingPage1_game01.html"
+    }
+
+    function instruction() {
+      location.href = "game01_instruction.html"
+    }
+  </script>
+</head>
+
+<body bgcolor=#B9E2FA>
+  <span style="cursor:default">
+    <center>
+
+      <!-- 메인화면 제목출력 -->
+      <p style="margin-top:4%">
+        <b>
+          <font size=9 color=slateblue face="나눔고딕">
+            <font color=tomato>세계의&nbsp;날</font>
+            <br>
+            <font size=7>미로 게임</font>
+          </font>
+        </b>
+        <br>
+        <img src="images/expand.png" width=90px height=90px style="margin-top:20px">
+      </p>
+
+      <!-- 메인화면 이미지출력 -->
+      <p style="margin-top:1.5%">
+
+      <font face=나눔고딕 size=3>
+        <b>우리가 함께 만들어 나가는 더 나은 세상</b>
+      </font>
+    </p>
+
+        <!-- 메인화면 폼 출력 -->
+        <div class=ins style="width:270px; height:100px;">
+          <form>
+            <input type=button style="background-color:white;color:tomato;font:20px 나눔고딕;font-weight:bold;width:120px;height:30pt;border:2px solid white;border-radius:15px" value="게임 시작" onClick=gameGo()>
+            &nbsp;
+
+            <input type=button style="background-color:white;color:violet;font:20px 나눔고딕;font-weight:bold;width:120px;height:30pt;border:2px solid white;border-radius:15px" value="게임 안내" onClick=instruction()>
+
+            <p>
+              <img src="images/calendar-p.png" width=50px height=50px>
+
+          </form>
+        </div>
+        <p>
+          <font size=2 face="나눔고딕">&copy;김민정·1305·미림여정<br>제작기간: 2019/09~2019/11</font>
+        </p>
+
+        <script language=javascript>
+
+        </script>
+    </center>
+  </span>
+</body>
+
+</html>

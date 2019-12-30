@@ -1,0 +1,214 @@
+
+.button1{
+  background-color:tomato; color:white;
+  font:17px 나눔고딕; font-weight:bold; width:85px; height:26pt;
+  border:2px solid white; border-radius:15px;
+}
+.button2{
+  background-color:yellowgreen; color:white;
+  font:17px 나눔고딕; font-weight:bold; width:125px; height:26pt;
+  border:2px solid white; border-radius:15px;
+}
+
+  .mystyle {
+    visibility: hidden;
+  }
+
+  #date{
+    margin-top:50px;
+    background-color: #99CCFF;
+    border: 0px;
+    border-radius: 25px;
+    width: 270px;
+    height: 50px;
+  }
+
+.butt {
+  background-color:#555555;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 나눔고딕;
+  border-radius: 50%;
+}
+
+.windowpanel{
+  width:1515px;
+  height:702px;
+  top:50%;
+  border: 1.5px dotted white;
+}
+
+
+.bob{
+  font-family: 나눔고딕;
+}
+
+.ins{
+  background-color:#5ABEFF;
+  padding:16px;
+  border:5px solid #FF87BE;
+  border-radius:30px;
+}
+
+.block {
+  display: inline-block;
+  background-color: #1EA4FF;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px;
+  margin: 1px;
+  cursor:no-drop;
+}
+
+
+.block3 {
+  display: inline-block;
+  background-color: #FF5675;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px;
+  margin: 1px;
+  cursor:no-drop;
+}
+
+.block2 {
+  display: inline-block;
+  background-color: #FF8200;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px;
+  margin: 1px;
+  cursor:no-drop;
+}
+
+.block4 {
+  display: inline-block;
+  background-color: green;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px;
+  margin: 1px;
+  cursor:no-drop;
+}
+
+.pointblock {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px;
+  margin: 1px;
+  cursor: grab;
+}
+
+.block5 {
+  display: inline-block;
+  background-color: #B24BE5;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 0px 0px 0px 0px;
+  cursor:no-drop;
+}
+
+.outoverline {
+  text-align: center;
+  align: middle;
+}
+
+.gamediv {
+  display: inline-block;
+  background-color: white;
+  width: 780px;
+  height: 470px;
+  border: 0px;
+  border-radius: 30px;
+  margin-left: 350;
+  margin-top: 115;
+}
+
+
+
+
+h1{
+  font-family: "나눔고딕";
+}
+
+.infodiv{
+  width: 700px; height: 550px;
+  background-color: white;
+  border-radius: 20px;
+  background-color: rgba( 255, 255, 255, 0.7 );
+  padding: 30px;
+  text-align: left;
+  line-height :25px;
+}
+
+.body{
+  margin: 0px;
+}
+table {
+    border-collapse: collapse;
+    border-style: none;
+    border-size: 0;
+    width: 100%; height:100%;
+    text-align:center;
+    align: middle;
+    margin: 0px 0px 0px 0px;
+
+  }
+
+  tr,td{
+    border-size: 0;
+    width:20%;
+    border-style: none;
+    border-size: noresize;
+  }
+
+  .td1{
+    background-color:#1EA4FF
+  }
+  .td1:hover{
+    background-color:#96FFFF
+  }
+
+  .td2{
+    background-color:#FFCD28
+  }
+  .td2:hover{
+    background-color:#FAF082
+  }
+  .td3{
+    background-color:#FF5675
+  }
+  .td3:hover{
+    background-image: none;
+    background-color:#FF92B1
+  }
+  .td4{
+    background-color:#64CD3C
+  }
+  .td4:hover{
+    background-image: none;
+    background-color:#B2FA5C
+  }
+  .td5{
+    background-color:#9696FF
+  }
+  .td5:hover{
+    background-image: none;
+    background-color:#D5C2EE
+  }
+
+  a:link {
+    text-decoration: none;
+  }

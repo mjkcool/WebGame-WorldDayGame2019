@@ -1,0 +1,141 @@
+<html>
+<!-- 정리 완료 11/2 -->
+<head>
+  <meta charset="utf-8">
+  <title>✰ Level 4 ✰</title>
+
+  <Link rel="stylesheet" type="text/css" href="stylesheet_game01.css">
+  <script language=javascript src='jsfunc.js'></script>
+  <script language=javascript>
+    var point = 0;
+
+    function over() {
+      location.href = "game01_gameover_4first.html"
+    }
+    function next() {
+      if (point == 8) {
+        location.href = "stage04_clear.html"
+      } else {
+        alert("저런, 아직 아이템이 남아있네요!")
+        over()
+      }
+    }
+  </script>
+
+</head>
+
+<body bgcolor=#B2FA5C onload="myinit()"><span style="cursor:move">
+  <!-- 익스플로러에서만 재생됨. 크롬의 보안장벽 -->
+  <audio loop autoplay preload="auto">
+    <source src="videos/earth-back.ogg" type="audio/ogg">
+    <source src="videos/earth-back.mp3" type="audio/mpeg">
+  </audio>
+
+    <div class=windowpanel>
+      <!-- 게임영역 -->
+      <div class=gamediv id=gamediv>
+
+        <br>
+        <img id=actDiv1 class=pointblock onmouseover=myFunction1() src=images/clouds.png style='margin-top:10px; margin-left:3px;width:40px; height:40px;'></img>
+        <div class=block4 onmouseover=over() style="margin-left:95px;"></div>
+        <div class=block4 onmouseover=over() style="margin-left:40px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:50px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:35px"></div>
+        <img id=actDiv2 class=pointblock onmouseover=myFunction2() src=images/iceberg.png style='margin-left:90px; width:40px'></img>
+        <br>
+        <div class=block4 onmouseover=over() style="margin-left:3px;"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:40px"></div>
+        <img id=actDiv3 class=pointblock onmouseover=myFunction3() src=images/sunny.png style='display: inline-block; margin-left:0px;'></img>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:50px"></div>
+        <img id=actDiv4 class=pointblock onmouseover=myFunction4() src=images/polar-bear.png style='margin-left:0px;'></img>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:35px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <br>
+        <div class=block4 onmouseover=over() style="margin-left:230px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:47px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:50px"></div>
+
+        <div class=block4 onmouseover=over() style="margin-left:43px"></div>
+        <br>
+        <div class=block4 onmouseover=over() style="margin-left:43px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:235px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <br>
+        <div class=block4 onmouseover=next() style="cursor:cell; background-color: #B24BE5 ; margin-left:185px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <br>
+        <div class=block4 onmouseover=over() style="margin-left:43px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:235px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <br>
+        <div class=block4 onmouseover=over() style="margin-left:230px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:47px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:50px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:45px"></div>
+        <br>
+        <div class=block4 onmouseover=over() style="margin-left:3px;"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:40px"></div>
+        <img id=actDiv5 class=pointblock onmouseover=myFunction5() src=images/forest.png style='display: inline-block; margin-left:0px;'></img>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:50px"></div>
+        <img id=actDiv6 class=pointblock onmouseover=myFunction6() src=images/plant.png style='display: inline-block; margin-left:0px;'></img>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:35px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <br>
+        <img id=actDiv8 class=pointblock onmouseover=myFunction8() src=images/recycle-sign.png style='display: inline-block; margin-left:0px;'></img>
+        <div class=block4 onmouseover=over() style="margin-left:95px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:37px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:50px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block4 onmouseover=over() style="margin-left:40px"></div>
+        <img id=actDiv7 class=pointblock onmouseover=myFunction7() src=images/sea.png style='display: inline-block; margin-left:90px;'></img>
+
+      </div>
+      <!-- </div> -->
+
+
+
+  </span></body>
+</div>
+
+</html>

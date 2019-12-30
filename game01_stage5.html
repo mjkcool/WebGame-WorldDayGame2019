@@ -1,0 +1,243 @@
+<html>
+<!-- 정리 완료 11/2 -->
+<head>
+  <meta charset="utf-8">
+  <title>✰ Level 5 ✰</title>
+
+  <Link rel="stylesheet" type="text/css" href="stylesheet_game01.css">
+  <script language=javascript src='jsfunc.js'></script>
+  <script language=javascript>
+    var point = 0;
+
+    function over() {
+      location.href = "game01_gameover_5first.html"
+    }
+
+    function next() {
+      if (point == 8) {
+        location.href = "stage05_clear.html"
+      } else {
+        alert("저런, 아직 아이템이 남아있네요!")
+        over()
+      }
+    }
+  </script>
+  <style>
+    #move {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background: slateblue;
+      position: relative;
+      -webkit-animation: moveBlock1 1.5s infinite;
+      /* Safari 4.0 - 8.0 */
+      -webkit-animation-direction: reverse;
+      /* Safari 4.0 - 8.0 */
+      animation: moveBlock1 1.5s infinite;
+      position: reverse;
+      border-radius: 10px;
+    }
+
+    #move2 {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background: slateblue;
+      position: relative;
+      -webkit-animation: moveBlock2 1.7s infinite;
+      /* Safari 4.0 - 8.0 */
+      -webkit-animation-direction: reverse;
+      /* Safari 4.0 - 8.0 */
+      animation: moveBlock2 1.7s infinite;
+      position: reverse;
+      border-radius: 10px;
+    }
+
+    #move3 {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background: slateblue;
+      position: relative;
+      -webkit-animation: moveBlock3 1.7s infinite;
+      /* Safari 4.0 - 8.0 */
+      -webkit-animation-direction: reverse;
+      /* Safari 4.0 - 8.0 */
+      animation: moveBlock3 1.7s infinite;
+      position: reverse;
+      border-radius: 10px;
+    }
+
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes moveBlock1 {
+      0% {background: #B24BE5;left: 0px;top: 0px;}
+      25% {background: slateblue;left: 135px;top: 0px;}
+      50% {background: #B24BE5;left: 0px;top: 0px;}
+      75% {background: slateblue;left: 135px;top: 0px;}
+      100% {background: #B24BE5;left: 0px;top: 0px;}
+    }
+    @keyframes moveBlock1 {
+      0% {background: #B24BE5;left: 0px;top: 0px;}
+      25% {background: slateblue;left: 135px;top: 0px;}
+      50% {background: #B24BE5;left: 0px;top: 0px;}
+      75% {background: slateblue;left: 135px;top: 0px;}
+      100% {background: #B24BE5;left: 0px;top: 0px;}
+    }
+    @-webkit-keyframes moveBlock2 {
+      0% {background: #B24BE5;left: 0px;top: 0px;}
+      25% {background: slateblue;left: 0px;top: 280px;}
+      50% {background: #B24BE5;left: 0px;top: 0px;}
+      75% {background: slateblue;left: 0px;top: 280px;}
+      100% {background: #B24BE5;left: 0px;top: 0px;}
+    }
+    @keyframes moveBlock2 {
+      0% {background: #B24BE5;left: 0px;top: 0px;}
+      25% {background: slateblue;left: 0px;top: 280px;}
+      50% {background: #B24BE5;left: 0px;top: 0px;}
+      75% {background: slateblue;left: 0px;top: 280px;}
+      100% {background: #B24BE5;left: 0px;top: 0px;}
+    }
+    @-webkit-keyframes moveBlock3 {
+      0% {background: #B24BE5;left: 0px;top: -7px;}
+      25% {background: slateblue;left: 0px;top: 48px;}
+      50% {background: #B24BE5;left: 0px;top: -7px;}
+      75% {background: slateblue;left: 0px;top: 48px;}
+      100% {background: #B24BE5;left: 0px;top: -7px;}
+    }
+    @keyframes moveBlock3 {
+      0% {background: #B24BE5;left: 0px;top: -7px;}
+      25% {background: slateblue;left: 0px;top: 48px;}
+      50% {background: #B24BE5;left: 0px;top: -7px;}
+      75% {background: slateblue;left: 0px;top: 48px;}
+      100% {background: #B24BE5;left: 0px;top: -7px;}
+    }
+  </style>
+</head>
+
+<body bgcolor=#A0AFFF onload="myinit()"><span style="cursor:move">
+    <div class=windowpanel>
+      <!-- 게임영역 -->
+      <div class=gamediv id=gamediv>
+        <!-- 1번째 줄 -->
+        <div class=block5 onmouseover=over() style="margin-left:122px; height:15px; margin-top:-3px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:405px; height:15px; margin-top:-3px"></div>
+        <br>
+
+        <!-- 2번째줄 -->
+        <img id=actDiv1 class=pointblock onmouseover=myFunction1() src=images/student.png style='margin-left:75px;margin-top:-4px;'></img>
+        <div class=block5 onmouseover=over() style="margin-left:0px; margin-top:-4px;"></div>
+        <div class=block5 onmouseover=over() style="margin-left:180px; margin-top:-4px;"></div>
+        <div class=block5 onmouseover=over() style="margin-left:180px;margin-top:-4px;"></div>
+        <div class=block5 onmouseover=over() style="margin-left:40px;margin-top:-4px;"></div>
+        <br>
+
+        <!-- 3번째 줄 -->
+        <div class=block5 onmouseover=over() style="margin-left:30px;"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px;"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px;"></div>
+        <div class=block5 onmouseover=over() style="margin-left:53px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:35px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div id=move2 onmouseover=over()></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=next() style="margin-left:40px; background-color: black; cursor: auto;"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <br>
+
+        <!-- 4번째 줄 -->
+        <img id=actDiv2 class=pointblock onmouseover=myFunction2() src=images/pilgrim.png style='margin-left:220px;'></img>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <img id=actDiv3 class=pointblock onmouseover=myFunction3() src=images/teacher.png style='margin-left:40px;'></img>
+        <div class=block5 onmouseover=over() style="margin-left:45px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:85px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <br>
+
+        <!-- 5번째 줄 -->
+        <div class=block5 onmouseover=over() style="margin-left:3px;width:25px;"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:40px"></div>
+        <img id=actDiv4 class=pointblock onmouseover=myFunction4() src=images/artist.png style='margin-left:175px;'></img>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <br>
+
+        <!-- 6번째 줄 -->
+        <div class=block5 onmouseover=over() style="margin-left:265px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:130px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:85px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <br>
+
+        <!-- 7번째 줄 -->
+        <div id=move onmouseover=over()></div>
+        <div class=block5 onmouseover=over() style="margin-left:130px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:45px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:37px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <img id=actDiv5 class=pointblock onmouseover=myFunction5() src=images/astronaut.png style='margin-left:175px;'></img>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <br>
+
+        <!-- 8번째 줄 -->
+        <div class=block5 onmouseover=over() style="margin-left:175px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:220px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:85px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <br>
+
+        <!-- 9번째 줄 -->
+        <div class=block5 onmouseover=over() style="margin-left:82px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:40px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:43px"></div>
+        <img id=actDiv6 class=pointblock onmouseover=myFunction6() src=images/doctor.png style='margin-left:178px;'></img>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <br>
+
+        <!-- 10번째 줄 -->
+        <div id=move3 onmouseover=over() style="margin-left:80px"></div>
+        <img id=actDiv7 class=pointblock onmouseover=myFunction7() src=images/police-officer.png style='margin-left:2px;'></img>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:133px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:80px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+
+        <!-- 11번째 줄 -->
+        <br>
+        <div class=block5 onmouseover=over() style="margin-left:175px"></div>
+        <img id=actDiv8 class=pointblock onmouseover=myFunction8() src=images/scientist.png style='width: 37px;margin-left:0px;'></img>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+        <div class=block5 onmouseover=over() style="margin-left:0px"></div>
+      </div>
+
+  </span>
+  </div>
+</body>
+
+</html>
