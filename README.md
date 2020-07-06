@@ -1,6 +1,6 @@
 # 🌎 World day Game 2019 🎉
 ## 📄 Introduction
-#### We are part of the world community🌐!
+#### 👥We are part of the world community🌐!
 This web project introduce the five major World Day and provide various media information about it. It was made into a game because it is difficult to attract attention of all ages simply by providing information.
 * Complete: Nov, 2019
 * Making period: 2 months
