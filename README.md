@@ -6,7 +6,7 @@ This web project introduce the five major World Day and provide various media in
 * Making period: 2 months
 * Using component: HTML, Css, JavaScript
 * Purpose: To raise interest in World Day and use it for educational purposes, a simple maze game was created with this theme. Children are also easy to enjoy with visual materials and pictures.
-<br><br><br>
+<br><br>
 ## Playing screen
 ### Main page
 <img src=https://user-images.githubusercontent.com/53461080/86586485-e97c0080-bfc2-11ea-96ea-2afa063af158.png><br>
