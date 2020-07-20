@@ -40,4 +40,4 @@ First stage
 <img src=https://user-images.githubusercontent.com/53461080/86586525-f4cf2c00-bfc2-11ea-9460-eeb3f4524577.png><br>
 <img src=https://user-images.githubusercontent.com/53461080/86586526-f567c280-bfc2-11ea-938e-01ff53d03c55.png><br>
 <img src=https://user-images.githubusercontent.com/53461080/86586527-f6005900-bfc2-11ea-8613-3d60c6b76fe9.png><br>
-## ▶️ <a href="https://mjkim0206.github.io/WebGame-WorldDayGame2019" target="_blank">Play it!</a>
+## ▶️ [Play it!](https://mjkim0206.github.io/WebGame-WorldDayGame2019/?target=_blank")
